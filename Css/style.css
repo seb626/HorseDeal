@@ -423,3 +423,8 @@ p {
     margin-right: -45vh;
   }
 }
+
+#map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+        margin-left: 150px;
+        margin-top: 80px;
+			}
