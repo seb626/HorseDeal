@@ -89,7 +89,7 @@ min-height: 150px;
     height: 350px!important;
     margin-top: 50px!important;
 }
-.btn-lg {
+.btn-outline {
   max-width: 200px;
   margin-top: 50px!important;
 }
@@ -393,14 +393,27 @@ p {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.btn-lg {
+.btn-outline {
   display: block;
   margin: auto;
-  background-image: linear-gradient(to right, #F39200, #FC6721, #F6332A);
+  background-color:none;
   margin-top: 60px;
   width: 550px;
   height: 100px;
-  color: white;
+  color: black;
+  border-top-color: #F39200;
+  border-left-color: #FC6721;
+  border-right-color: #FC6721;
+  border-bottom-color: #F6332A;
+   border-width: 5px;
+   text-decoration: none;
+}
+.btn-outline a {
+  color:black;
+}
+.btn-outline a:hover {
+  color: black;
+  text-decoration: none;
 }
 
 @media (max-width: 568px) {
