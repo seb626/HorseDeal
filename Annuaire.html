@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="Css/Style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>HORSEDEAL Annuaire</title>
+  </head>
+  <body>
+    <div class="header">
+      <img id="logo" src="img/logo.png">
+
+</div>
+<div class="menu">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li><a class="nav-link" href="Index.html">Accueil</a></li>
+                <li><a class="nav-link" href="Annuaire.html">Annuaire</a></li>
+                <li><a class="nav-link" href="#">HorseShaire</a></li>
+                <li><a class="nav-link" href="#">Forum</a></li>
+                <li><a class="nav-link" href="#">Ride Map</a></li>
+                <li><a class="nav-link" href="#footer">Contact</a></li>
+            </ul>
+            </div>
+            </nav>
+            </div>
+            <div id="particles-js" style="height:1435px">
+
+            </div>
+
+<div class="body" style="height:1300px">
+<!--  <svg class="goo-filter" viewBox="0 0 1 1">
+<filter id="goo">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 50 -20" result="goo" />
+</filter>
+</svg>-->
+              <main id="app">
+<section class="backgrounds">
+  <div
+       class="background"
+       style="background-image: linear-gradient(to bottom, #F39200, #FC6721, #F6332A)">
+  </div>
+  <div
+       class="background"
+       data-active="true" style="background-image: linear-gradient(to bottom, #F39200, #FC6721, #F6332A)">
+  </div>
+  <div
+       class="background"
+       style="background-image: linear-gradient(to bottom, #F39200, #FC6721, #F6332A)">
+  </div>
+  <div
+       class="background"
+       style="background-image: linear-gradient(to bottom, #F39200, #FC6721, #F6332A)">
+  </div>
+  <div
+       class="background"
+       style="background-image: linear-gradient(to bottom, #F39200, #FC6721, #F6332A)">
+  </div>
+</section>
+
+<section class="content">
+  <article>
+    <header>
+      <a href="Ecuries.html"><h1>Ecuries</h1></a>
+    </header>
+    <p>Consulter la liste des écuries</p>
+  </article>
+  <article data-active="true" >
+    <header>
+      <a href="Commerces.html"><h1>Commerces</h1></a>
+    </header>
+    <p>Consulter la liste des commerces</p>
+  </article>
+  <article data-id="3" >
+    <header>
+      <a href="Sante.html"><h1>professionnels de la santé</h1></a>
+    </header>
+    <p>Consulter la liste des professionnels de la santé</p>
+  </article>
+  <article data-id="4">
+    <header>
+      <a href="Agriculteurs.html"><h1>Agriculteurs</h1></a>
+    </header>
+    <p>Consulter la liste des agriculteurs</p>
+  </article>
+  <article data-id="5">
+    <header>
+      <a href="Patures.html"><h1>Patures</h1></a>
+    </header>
+    <p>Consulter la liste des patures</p>
+  </article>
+</section>
+</main>
+
+
+</div>
+
+
+            <footer id="footer"  class="footer">
+              <img id="logo2" src="img/logo2.3.png" class="rounded mx-auto d-block">
+              <div class="contact">
+                <h5>COQUERELLE Camille</h5>
+                <a href="mailto:contact.horsedeal@gmail.com">contact.horsedeal@gmail.com</a>
+                <p>&copy; LOGO & DESIGN by Alice COISNE. DEVELOPED by Sébastien HALLE. 2019</p>
+              </div>
+
+            </footer>
+
+  </body>
+
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 50,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#F6332A"
+        },
+        "shape": {
+          "type": "polygon",
+          "stroke": {
+            "width": 2,
+            "color": "#F6332A"
+          },
+          "polygon": {
+            "nb_sides": 5
+          },
+          "image": {
+            "src": "img/github.svg",
+            "width": 100,
+            "height": 100
+          }
+        },
+        "opacity": {
+          "value": 0.8,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#F6332A",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "repulse"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 140,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    });
+
+
+   console.clear();
+
+const elApp = document.querySelector("#app");
+const elBackgrounds = Array.from(document.querySelectorAll(".background"));
+const elArticles = Array.from(document.querySelectorAll(".content article"));
+
+elArticles.forEach(article => {
+  article.addEventListener("click", e => {
+    const index = elArticles.indexOf(article);
+    const bg = elBackgrounds[index];
+
+    // Remove all data-active
+    elApp.querySelectorAll("[data-active]").forEach(el => {
+      el.removeAttribute("data-active");
+    });
+
+    article.setAttribute("data-active", true);
+    bg.setAttribute('data-active', true);
+  });
+});
+    </script>
+</html>
