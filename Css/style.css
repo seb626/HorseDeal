@@ -62,9 +62,9 @@ min-height: 150px;
   }
   #background {
     height: auto;
-    min-height: 350px;
+    max-height: 300px!important;
     padding-bottom: 50%;
-    padding-top: 75px;
+    padding-top: 50px;
   }
   .carousel-item img {
     height: 120px;
