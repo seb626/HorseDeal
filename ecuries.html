@@ -93,6 +93,57 @@
         </div>
       </div>
     </div>
+
+    <div class="col-md-4 mt-5">
+    <div class="card text-center">
+      <img class="card-img-top" src="https://granvillage.com/asset/image/c/980x550/model/business/2/3/9/7/cover.png?4908d7" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">L'ETRIER DU CAMBRESIS </h5>
+        <p class="card-text">88 B ROUTE NATIONALE 43 59268 SANCOURT</p>
+        <hr>
+        <div id="map3"></div>
+      </div>
+      <div class="card-footer text-muted">
+        <div class="row">
+          <div class="col">
+            <a href=""><i class="fas fa-map"></i></a>
+          </div>
+          <div class="col">
+            <a href="mailto:test@test.com"><i class="fas fa-envelope"></i></a>
+          </div>
+          <div class="col">
+            <a href="tel:+123456789"><i class="fas fa-phone"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="col-md-4 mt-5">
+    <div class="card text-center">
+      <img class="card-img-top" src="https://granvillage.com/asset/image/c/980x550/model/business/2/9/7/4/cover.png?4908d7" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Lipschitz - centre équestre</h5>
+        <p class="card-text">242 chemin de la Rivière 59151 Arleux</p>
+        <hr>
+        <div id="map4"></div>
+      </div>
+      <div class="card-footer text-muted">
+        <div class="row">
+          <div class="col">
+            <a href=""><i class="fas fa-map"></i></a>
+          </div>
+          <div class="col">
+            <a href="mailto:test@test.com"><i class="fas fa-envelope"></i></a>
+          </div>
+          <div class="col">
+            <a href="tel:+123456789"><i class="fas fa-phone"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
 </div>
             <footer id="footer" class="footer">
               <img id="logo2" src="img/logo2.3.png" class="rounded mx-auto d-block">
@@ -221,11 +272,14 @@
 <script>
 			var macarte1 = null;
       var macarte2 = null;
+      var macarte3 = null;
 			// Fonction d'initialisation de la carte
 			function initMap() {
 				// Créer l'objet "macarte" et l'insèrer dans l'élément HTML qui a l'ID "map"
                 macarte1 = L.map('map1').setView([49.966468, 2.410394], 11);
                 macarte2 = L.map('map2').setView([49.967905, 3.717370], 11);
+                macarte3 = L.map('map3').setView([50.212046, 3.185798], 11);
+                macarte4 = L.map('map4').setView([50.277899, 3.097562], 11);
                 // Leaflet ne récupère pas les cartes (tiles) sur un serveur par défaut. Nous devons lui préciser où nous souhaitons les récupérer. Ici, openstreetmap.fr
                 L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
                     // Il est toujours bien de laisser le lien vers la source des données
@@ -243,6 +297,23 @@
                 }).addTo(macarte2);
                 var marker = L.marker([49.967905, 3.717370]).addTo(macarte2);
                 marker.bindPopup('<b>Ferme de Ribeaufontaine - hébergement de charme en pleine nature </b><br>Ferme de Ribeaufontaine 02450 Dorengt');
+                L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+                    // Il est toujours bien de laisser le lien vers la source des données
+                    attribution: 'données © <a href="//osm.org/copyright">OpenStreetMap</a>/ODbL - rendu <a href="//openstreetmap.fr">OSM France</a>',
+                    minZoom: 1,
+                    maxZoom: 20
+                }).addTo(macarte3);
+                var marker = L.marker([50.212046, 3.185798]).addTo(macarte3);
+                marker.bindPopup('<b>L\'ETRIER DU CAMBRESIS</b><br>88 B ROUTE NATIONALE 43 59268 SANCOURT');
+                L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+                    // Il est toujours bien de laisser le lien vers la source des données
+                    attribution: 'données © <a href="//osm.org/copyright">OpenStreetMap</a>/ODbL - rendu <a href="//openstreetmap.fr">OSM France</a>',
+                    minZoom: 1,
+                    maxZoom: 20
+                }).addTo(macarte4);
+                var marker = L.marker([50.277899, 3.097562]).addTo(macarte4);
+                marker.bindPopup('<b>Lipschitz - centre équestre </b><br>242 chemin de la Rivière 59151 Arleux');
+
             }
 			window.onload = function(){
 				// Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
