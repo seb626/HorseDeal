@@ -38,11 +38,11 @@
             </div>
             </nav>
             </div>
-            <div id="particles-js" style="height:1435px">
+            <div id="particles-js" style="height:2135px">
 
             </div>
 
-<div class="body" style="height:1300px">
+<div class="body" style="height:2000px">
 
   <div class="col-md-4 mt-5">
         <div class="card text-center">
@@ -51,9 +51,7 @@
             <h5 class="card-title">LES ECURIES DU PRIEURES</h5>
             <p class="card-text">6 RUE DES CHAUDRONNIERS 80260 ST GRATIEN</p>
             <hr>
-
-            <div id="map"></div>
-
+            <div id="map1"></div>
           </div>
           <div class="card-footer text-muted">
             <div class="row">
@@ -70,12 +68,32 @@
           </div>
         </div>
       </div>
+
+      <div class="col-md-4 mt-5">
+      <div class="card text-center">
+        <img class="card-img-top" src="https://granvillage.com/asset/image/c/980x550/model/business/2/2/2/9/cover.png?4908d7" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">FERME DE RIBEAUFONTAINE</h5>
+          <p class="card-text">Ferme de Ribeaufontaine 02450 Dorengt</p>
+          <hr>
+          <div id="map2"></div>
+        </div>
+        <div class="card-footer text-muted">
+          <div class="row">
+            <div class="col">
+              <a href=""><i class="fas fa-map"></i></a>
+            </div>
+            <div class="col">
+              <a href="mailto:test@test.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="col">
+              <a href="tel:+123456789"><i class="fas fa-phone"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 </div>
-
-
-
             <footer id="footer" class="footer">
               <img id="logo2" src="img/logo2.3.png" class="rounded mx-auto d-block">
               <div class="contact">
@@ -199,26 +217,36 @@
     },
     "retina_detect": true
   });
-
-			var macarte = null;
+</script>
+<script>
+			var macarte1 = null;
+      var macarte2 = null;
 			// Fonction d'initialisation de la carte
 			function initMap() {
 				// Créer l'objet "macarte" et l'insèrer dans l'élément HTML qui a l'ID "map"
-                macarte = L.map('map').setView([49.966468, 2.410394], 11);
+                macarte1 = L.map('map1').setView([49.966468, 2.410394], 11);
+                macarte2 = L.map('map2').setView([49.967905, 3.717370], 11);
                 // Leaflet ne récupère pas les cartes (tiles) sur un serveur par défaut. Nous devons lui préciser où nous souhaitons les récupérer. Ici, openstreetmap.fr
                 L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
                     // Il est toujours bien de laisser le lien vers la source des données
                     attribution: 'données © <a href="//osm.org/copyright">OpenStreetMap</a>/ODbL - rendu <a href="//openstreetmap.fr">OSM France</a>',
                     minZoom: 1,
                     maxZoom: 20
-                }).addTo(macarte);
-                var marker = L.marker([49.966468, 2.410394]).addTo(macarte);
+                }).addTo(macarte1);
+                var marker = L.marker([49.966468, 2.410394]).addTo(macarte1);
                 marker.bindPopup('<b>LES ECURIES DU PRIEURES</b><br>6 RUE DES CHAUDRONNIERS 80260 ST GRATIEN');
+                L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+                    // Il est toujours bien de laisser le lien vers la source des données
+                    attribution: 'données © <a href="//osm.org/copyright">OpenStreetMap</a>/ODbL - rendu <a href="//openstreetmap.fr">OSM France</a>',
+                    minZoom: 1,
+                    maxZoom: 20
+                }).addTo(macarte2);
+                var marker = L.marker([49.967905, 3.717370]).addTo(macarte2);
+                marker.bindPopup('<b>Ferme de Ribeaufontaine - hébergement de charme en pleine nature </b><br>Ferme de Ribeaufontaine 02450 Dorengt');
             }
 			window.onload = function(){
 				// Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
 				initMap();
 			};
-
-    </script>
+</script>
 </html>
