@@ -122,6 +122,26 @@ min-height: 150px;
                           height: 200px!important;
                           margin-top: 50px!important;
                   			}
+                        #map5{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                                width: 285px!important;
+                                height: 200px!important;
+                                margin-top: 50px!important;
+                        			}
+                              #map6{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                                      width: 285px!important;
+                                      height: 200px!important;
+                                      margin-top: 50px!important;
+                              			}
+                                    #map7{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                                            width: 285px!important;
+                                            height: 200px!important;
+                                            margin-top: 50px!important;
+                                    			}
+                                          #map8{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                                                  width: 285px!important;
+                                                  height: 200px!important;
+                                                  margin-top: 50px!important;
+                                          			}
       .card{
           margin-left: 5px!important;
       }
@@ -481,6 +501,26 @@ p {
                           margin-top: 80px;
 
                   			}
+                        #map5{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                                width: 520px;
+                                height: 400px;
+                                margin-top: 80px;
+                        			}
+                              #map6{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                                      width: 520px;
+                                      height: 400px;
+                                      margin-top: 80px;
+                              			}
+                                    #map7{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                                            width: 520px;
+                                            height: 400px;
+                                            margin-top: 80px;
+                                    			}
+                                          #map8{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                                                  width: 520px;
+                                                  height: 400px;
+                                                  margin-top: 80px;
+                                          			}
       hr {
     border-top: 1px solid #007bff;
     width:70%;
