@@ -142,6 +142,26 @@ min-height: 150px;
                                                   height: 200px!important;
                                                   margin-top: 50px!important;
                                           			}
+                                                #map9{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                                                        width: 285px!important;
+                                                        height: 200px!important;
+                                                        margin-top: 50px!important;
+                                                			}
+                                                      #map10{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                                                              width: 285px!important;
+                                                              height: 200px!important;
+                                                              margin-top: 50px!important;
+                                                      			}
+                                                            #map11{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                                                                    width: 285px!important;
+                                                                    height: 200px!important;
+                                                                    margin-top: 50px!important;
+                                                            			}
+                                                                  #map12{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                                                                          width: 285px!important;
+                                                                          height: 200px!important;
+                                                                          margin-top: 50px!important;
+                                                                  			}
       .card{
           margin-left: 5px!important;
       }
@@ -521,6 +541,26 @@ p {
                                                   height: 400px;
                                                   margin-top: 80px;
                                           			}
+                                                #map9{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                                                        width: 520px;
+                                                        height: 400px;
+                                                        margin-top: 80px;
+                                                			}
+                                                      #map10{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                                                              width: 520px;
+                                                              height: 400px;
+                                                              margin-top: 80px;
+                                                      			}
+                                                            #map11{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                                                                    width: 520px;
+                                                                    height: 400px;
+                                                                    margin-top: 80px;
+                                                            			}
+                                                                  #map12{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                                                                          width: 520px;
+                                                                          height: 400px;
+                                                                          margin-top: 80px;
+                                                                  			}
       hr {
     border-top: 1px solid #007bff;
     width:70%;
