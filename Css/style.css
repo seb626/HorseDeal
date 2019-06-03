@@ -64,6 +64,9 @@ min-height: 150px;
   #logo {
     margin-left: 85px;
   }
+  li {
+    margin-left: 20px!important;
+  }
   #background {
     height: auto;
     max-height: 300px!important;
