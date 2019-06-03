@@ -46,6 +46,10 @@ li {
   color:white;
 }
 
+.dropdown-menu {
+  color: white;
+}
+
 
 #background {
 background-image: linear-gradient(to right, #F39200, #FC6721, #F6332A);
