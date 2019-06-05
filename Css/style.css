@@ -33,17 +33,30 @@
   margin-bottom: 20px;
 }
 
+.header h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: -90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: -webkit-gradient(linear, 25% 1000%, 25% 100%, from(#F6332A), to(#F39200));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .menu {
   height: 100%;
   width:auto;
 }
 
 li {
-  margin-left: 215px;
+  margin-left: 150px;
+  font-size: 20px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color:white;
+  color:black;
 }
 
 .dropdown-menu {
@@ -258,6 +271,7 @@ min-height: 150px;
 
 body {
   font:normal 75% Arial, Helvetica, sans-serif;
+  height: auto;
 }
 
 canvas {
